@@ -1,0 +1,25 @@
+/* Regla Css Consta de 2 parte:
+1) el selector
+2)Bloque de declaracion:{
+    Atributo:Valor;}
+ */
+
+/* Hay tres formas de inserta estilos
+ 1)Estilos en linea
+ 2)Estilos Internos
+ 3)Estilos Externos */
+
+
+/*
+ Son mala practica porque son bloqueantes
+ @import url("otra_hoja.css"); */
+
+h1 {
+    color: orange;
+    background-color: skyblue;
+}
+
+Hay tres tipose de selectores: 
+1)Etiquetas-Elementos html
+2)Identificadores: #Id
+3)Clases: .Clases
