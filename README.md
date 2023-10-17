@@ -163,7 +163,7 @@
 57. * Intro Películas Star Wars
 58. * Despedida
 
-📝 ÍNDICE:
+📝 ÍNDICE Responsive Design y Arquitectura CSS:
 1. * Bienvenida
 2. * Descarga de archivos para trabajar
 3. * Introducción al Responsive Design
