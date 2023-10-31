@@ -13,13 +13,27 @@
 /*
  Son mala practica porque son bloqueantes
  @import url("otra_hoja.css"); */
-
+html{
+    scroll-behavior: smooth;
+}
 h1 {
     color: orange;
     background-color: skyblue;
 }
 
-Hay tres tipose de selectores: 
+/* Hay tres tipose de selectores: 
 1)Etiquetas-Elementos html
 2)Identificadores: #Id
-3)Clases: .Clases
+3)Clases: .Clases */
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#parrafo2{
+ background-color: aqua;
+}
+
+.texto-32{
+    background-color: cadetblue;
+}
