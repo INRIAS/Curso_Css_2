@@ -13,9 +13,10 @@
 /*
  Son mala practica porque son bloqueantes
  @import url("otra_hoja.css"); */
-html{
-    scroll-behavior: smooth;
+html {
+    scroll-behavior: smoothh;
 }
+
 h1 {
     color: orange;
     background-color: skyblue;
@@ -26,14 +27,151 @@ h1 {
 2)Identificadores: #Id
 3)Clases: .Clases */
 
-p{
+p {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#parrafo2{
- background-color: aqua;
+#parrafo2 {
+    background-color: aqua;
 }
 
-.texto-32{
+.texto-32 {
     background-color: cadetblue;
 }
+
+.Hijos-directos>li {
+    background-color: thistle;
+}
+
+.hijos-descendientes b {
+    background-color: thistle;
+}
+
+.hermanos-general~li {
+    background-color: aqua;
+}
+
+.hermanos-adyacentes+li {
+    background-color: aqua;
+}
+
+/* Selectores de Atributo 
+Se maneja con [] y siempre y cuando tengan el atributo
+*/
+
+.selectores-atributo a[href] {
+    color: orange;
+}
+
+.selectores-atributo a[target="_blank"] {
+    font-weight: bold;
+}
+
+/* El comodin * aplica si contiene el texto en cuestion en cualquier parte */
+.selectores-atributo a[href*="jonmircha"] {
+    text-decoration: underline;
+}
+
+/* El comodin ^ aplica si contiene el texto con el que inicia  */
+.selectores-atributo a[href^="http:"] {
+    text-decoration: none;
+}
+
+/* El comodin $ aplica si contiene el texto con el que finaliza  */
+.selectores-atributo a[href$="Curso"] {
+    font-style: italic;
+}
+
+/* El comodin ~ aplica si contiene el texto en un lista separada por espaocios  */
+.selectores-atributo a[class~="curso"] {
+    font-variant: small-caps;
+}
+
+/* El comodin | aplica si contiene el texto en un lista separada por espaocios  */
+.selectores-atributo a[class|="primary"] {
+    color: rebeccapurple;
+}
+
+/* Selector Universal
+se puede aplicar a todo el html
+*/
+
+/* Universal */
+* {
+    font-family: sans-serif;
+}
+
+/* Contextual*/
+.selector-universal * {
+    color: red;
+}
+
+.form-pseudoclases *:required {
+    border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+    border-color: red;
+}
+
+.form-pseudoclases *:focus {
+    background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled {
+    background-color: violet;
+}
+
+.menu-pseudoclases a:visited{
+    color: pink;
+}
+
+.menu-pseudoclases a:hover{
+ color: green;
+}
+
+
+.menu-pseudoclases a:active{
+    color: red;
+}
+
+
+/* Los Pseudoelementos Dan estilos a partes de un elemento se utiliza :: para diferenciarlo de las pseudoclases*/
+
+.saga-geminis::before{
+    content: "🤷";
+}
+.saga-geminis::after{
+    content: "🤷‍♂️";
+}
+
+/* Cascada:
+1. style
+2. css
+3. estilo en linea
+
+-User Agent(Etiquetas predeterminadas del navegador)
+-Personalizaciones.
+-Especificidad:
+-Orden de Aparicion
+Herencia*/
+
+/* La especificidad  es el peso que tiene un selector cundo hay conflicot de estilos. se calcula de lasiguiente manera:
+
+Etiquetas y pseudoelementos.......0,0,0,1
+Clases, Atributos, Pseudoclases...0,0,1,0
+Identificadores...................0,1,0,0
+Estilos en linea..................1,0,0,0
+!important.........Rompe la Especificidad
+*/
+
+/* La herencia es la capacidad de obtener(Heredar) los valores de sus ancestros mas cercanos, para aplicarla se usa el valor inherit si queremos evitarla podemos asignar otro valor o inicializar la propiedad  en cuestion con el valor inicial  */
+
+/* Caja en Linea y Caja en bloque 
+Caja en Linea No es permisiva
+Caja  en Bloque si es permisiva en propiedades
+*/

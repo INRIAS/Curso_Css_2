@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="Css/style.css">
     <title>Curso Css</title>
 </head>
+
 <body>
     <article id="temarios-css">
         <h1>Aprendiendo Css</h1>
@@ -14,7 +16,12 @@
         <h2>Temarios del curso</h2>
         <ul>
             <li><a href="index.html#selectores-basicos">Selectores Basicos</a></li>
-            <li><a href="index.html#selectores-avanzados"></a></li>
+            <li><a href="index.html#selectores-avanzados">Selectores Avanzados</a></li>
+            <li><a href="index.html#pseudoclases">Pseudoclases</a></li>
+            <li><a href="index.html#pseudoelementos">Pseudoelementos</a></li>
+            <li><a href="index.html#algoritmo-css"></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
@@ -28,11 +35,98 @@
         <p class="texto-32">Estilos por clases</p>
         <a href="index.html#temarios-css">☝️</a>
     </article>
-    <article id="selectores-avanzados"> 
+    <article id="selectores-avanzados">
         <h2>Selectores Avanzados</h2>
-        <a href="index.html#temarios-css">☝️</a>
-    </article> 
+        <h3>Selectores Hijos</h3>
+        <h4>Selectores Directos</h4>
+        <ul class="Hijos-directos">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Invierno</b></li>
+            <li><b>Otoño</b></li>
+        </ul>
+        <h4>Selectores Descendientes</h4>
+        <ul class="hijos-descendientes">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Invierno</b></li>
+            <li><b>Otoño</b></li>
+        </ul>
 
+        <h3>Selectores Hermanos</h3>
+        <h4>Selectores Generales</h4>
+        <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-general"><b>Verano</b></li>
+            <li><b>Invierno</b></li>
+            <li><b>Otoño</b></li>
+        </ul>
+        <h4>Selectores Adyacentes</h4>
+        <ul >
+            <li class="hermanos-adyacentes"><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Invierno</b></li>
+            <li><b>Otoño</b></li>
+        </ul>
+
+        <h3>Selectores Atributo</h3>
+        <nav class="selectores-atributo">
+            <ul>
+                <li><a href="https://jonmircha.com/" target="_blank">Inicio</a></li>
+                <li><a href="https://jonmircha.com/Curso" target="_blank">Curso</a></li>
+                <li><a href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+                <li><a href="http://jonmircha.com/blog" target="_blank">Blog</a></li>
+                <li><a class="primary-app-btn" href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+                <li><a class="atributo curso btn" href="http://jonmircha.com/notas" target="_blank">Notas</a></li>
+            </ul>
+        </nav>
+
+        <h3>Selector Universal</h3>
+        <ul class="selector-universal">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Invierno</b></li>
+            <li><b>Otoño</b></li>
+        </ul>
+        
+        <a href="index.html#temarios-css">☝️</a>
+    </article>
+    <article id="pseudoclases">
+        <h2>Pseudoclases</h2>
+        <form class="form-pseudoclases">
+            <input type="text" name="Nombre" placeholder="Escribe tu nombre" required>
+            <input type="email" name="Nombre" placeholder="Escribe tu nombre " required>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <nav class="menu-pseudoclases">
+            <a href="#">Seccion</a>
+            <a href="#">Seccion</a>
+            <a href="#">Seccion</a>
+            <a href="#">Seccion</a>
+        </nav>
+        
+        <a href="index.html#temarios-css">☝️</a>
+    </article>
+    <article id="pseudoelementos">
+        <h2>Pseudoelementos</h2>
+        <p>
+            <i>Bandai Myth Cloth Ex<i>
+            <span>Saga de Geminis</span>
+            <span class="saga-geminis">500</span>
+        </p>
+        <a href="index.html#temarios-css">☝️</a>
+    </article>
+    <article id="algoritmo-css">
+        <h2>Algoritmo Css</h2>
+        <ol>
+            <li>Cascada</li>
+            <li>Especificidad</li>
+            <li>Herencia</li>
+        </ol>
+        <a href="index.html#temarios-css">☝️</a>
+    </article>
 </body>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</html> 
+
+</html>
